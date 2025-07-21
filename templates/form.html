@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculate the average marks.</h1>
+        <form action="{{ url_for('form')}}" method="post">
+            <input type="text" name="Math" placeholder="Math" required="required">
+            <input type="text" name="Science" placeholder="Science" required="required">
+            <input type="text" name="History" placeholder="History" required="required">
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button </button>
+        </form>
+
+        <br>
+        the average of all marks is {{score}}
+        <br>
+    </div>
+    
+</body>
+</html>
